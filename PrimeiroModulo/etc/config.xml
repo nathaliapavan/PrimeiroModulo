@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<PrimeiroTeste_PrimeiroModulo>
+			<version>0.1.0</version>
+		</PrimeiroTeste_PrimeiroModulo>		
+	</modules>
+
+	<frontend>
+		<routers>
+			<primeiromodulo>
+				<use>standard</use>
+				<args>
+					<module>PrimeiroTeste_PrimeiroModulo</module>
+					<frontName>primeiromodulo</frontName>
+				</args>
+			</primeiromodulo>
+		</routers>
+	</frontend>	
+	
+</config>

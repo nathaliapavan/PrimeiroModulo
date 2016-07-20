@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<PrimeiroTeste_Weblog>
+			<version>0.1.0</version>
+		</PrimeiroTeste_Weblog>
+	</modules>
+
+
+		<frontend>
+			<routers>
+				<weblog>
+					<use>standard</use>
+					<args>
+						<module>PrimeiroTeste_Weblog</module>
+						<frontName>weblog</frontName>
+					</args>
+				</weblog>
+			</routers>
+		</frontend>
+
+	<global>
+    <!-- ... -->
+    <models>
+        <weblog>
+            <class>PrimeiroTeste_Weblog_Model</class>
+            <!--
+            need to create our own resource, can't just
+            use core_resource
+            -->
+            <resourceModel>weblog_resource</resourceModel> <!--Será utilizado para instanciar a Model Resource class.-->
+        </weblog>
+
+        <weblog_resource>
+        	<class>PrimeiroTeste_Weblog_Model_Resource_Blogpost_Collection</class><!-- Packagename_Modulename_Model_resource -->
+        	<entities>
+        		<blogpost>
+        			<table>blog_posts</table>
+        		</blogpost>
+        	</entities>
+        </weblog_resource>
+    </models>
+    <!-- ... -->
+</global>
+</config>
