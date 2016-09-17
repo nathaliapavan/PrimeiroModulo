@@ -5,7 +5,6 @@
 			<version>0.1.0</version>
 		</PrimeiroTeste_PrimeiroModulo>		
 	</modules>
-
 	<frontend>
 		<routers>
 			<primeiromodulo>
@@ -16,6 +15,5 @@
 				</args>
 			</primeiromodulo>
 		</routers>
-	</frontend>	
-	
+	</frontend>
 </config>
